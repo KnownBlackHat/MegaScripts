@@ -93,7 +93,7 @@ class MegaAccount:
 
             with open("accounts.csv", "a") as csvfile:
                 csvwriter = csv.writer(csvfile)
-                csvwriter.writerow([self.email, self.password, self.name, "-"])
+                csvwriter.writerow([self.email, self.password, self.name])
         else:
             print("[x] Verification Failed!")
 
